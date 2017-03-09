@@ -49,7 +49,8 @@ gulp.task('accessSniff-json', function() {
   return gulp.src('./example/**/*.html')
     .pipe(access({
       force: true,
-      verbose: false
+      verbose: true,
+      // accessibilityLevel: 'WCAG2AAA'
     }))
     .on('error', console.log)
     .pipe(rename({
