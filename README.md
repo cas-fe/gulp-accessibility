@@ -7,6 +7,8 @@ Uses [AccessSniff](https://github.com/yargalot/AccessSniff) and [HTML Codesniffe
 ![Gulp Accessibility example](/img/example.png)
 
 ## Getting Started
+*NOTE*: Last tested with Node v10.
+
 Install this gulp plugin next to your project's gulpfile with: `npm install gulp-accessibility --save-dev`
 
 Then add this line to your project's `gulpfile.js` gulpfile:
