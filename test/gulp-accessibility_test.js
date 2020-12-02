@@ -32,12 +32,12 @@ exports.accessibilityTests = {
 
     test.expect(2);
 
-    actual = fs.existsSync('reports/txt/test.txt');
-    expected = fs.existsSync('test/expected/txt/test.txt');
+    actual = fs.readFileSync('reports/txt/index.txt', 'utf8');
+    expected = fs.readFileSync('test/expected/txt/index.txt', 'utf8');
     test.equal(actual, expected, 'Should produce a TXT report without DOM element for a test file');
 
-    actual = fs.existsSync('reports/json/test.json');
-    expected = fs.existsSync('test/expected/json/test.json');
+    actual = fs.readFileSync('reports/json/index.json', 'utf8');
+    expected = fs.readFileSync('test/expected/json/index.json', 'utf8');
     test.equal(actual, expected, 'Should produce a JSON report without DOM element for a test file');
 
     test.done();

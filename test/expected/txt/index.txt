@@ -1,0 +1,16 @@
+gulp-accessibility/example/index.html
+heading|issue|element|id|class|line|column|description
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_2.H25.2|<title>Test</title>|||4|4|Check that the title element describes the document.
+ERROR|WCAG2A.Principle3.Guideline3_1.3_1_1.H57.2|<html><head>
+    <title>Test</title>
+  </head>
+  <body>
+    <h1>Title</h1>
+    <h3 style="color: #aaa">Subtitle</h3>
+    Lorem ipsum <a href="#test" style="text-decoration: none; color: inherit;">Test</a> dolor sit amet.
+  
+
+<script class="jsdom" src="gulp-accessibility/node_modules/access-sniff/dist/HTMLCS.min.js"></script></body></html>|||1|0|The html element should have a lang or xml:lang attribute which describes the language of the document.
+WARNING|WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141|<h3 style="color: #aaa">Subtitle</h3>|||8|4|The heading structure is not logically nested. This h3 element should be an h2 to be properly nested.
+ERROR|WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID|<a href="#test" style="text-decoration: none; color: inherit;">Test</a>|||9|16|This link points to a named anchor "test" within the document, but no anchor exists with that name.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="#test" style="text-decoration: none; color: inherit;">Test</a>|||9|16|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
