@@ -3,9 +3,7 @@ var gulp   = require('gulp');
 var rename = require('gulp-rename');
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
-var nodeunit = require('gulp-nodeunit');
 var runSequence = require('run-sequence');
-var accessSniff = require('access-sniff');
 var access = require('./index.js');
 
 gulp.task('clean', function(cb) {
@@ -19,16 +17,6 @@ gulp.task('lint', function() {
   return gulp.src(['./libs/*.js', 'gulpfile.js'])
     .pipe(jshint())
     .pipe(jshint.reporter(stylish));
-});
-
-gulp.task('nodeunit', function() {
-  return gulp.src('./test/*_test.js')
-    .pipe(nodeunit({
-      reporter: 'junit',
-      reporterOptions: {
-        output: 'reports'
-      }
-    }));
 });
 
 gulp.task('accessSniff-txt', function() {
@@ -60,5 +48,5 @@ gulp.task('accessSniff-json', function() {
 });
 
 gulp.task('test', function(callback) {
-  runSequence('clean', 'lint', 'accessSniff-txt', 'accessSniff-json', 'nodeunit', callback);
+  runSequence('clean', 'lint', 'accessSniff-txt', 'accessSniff-json', callback);
 });
