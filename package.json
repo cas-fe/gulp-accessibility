@@ -44,5 +44,8 @@
     "gulp-util": "^3.0.7",
     "lodash": "^4.3.0",
     "through2": "^0.6.5"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.10"
   }
 }

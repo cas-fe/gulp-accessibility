@@ -1,13 +1,10 @@
-# Gulp Accessibility
-[![Build Status](https://travis-ci.org/yargalot/gulp-accessibility.svg?branch=master)](https://travis-ci.org/yargalot/gulp-accessibility)
-[![Build status](https://ci.appveyor.com/api/projects/status/3fa7pmnavulmugj9?svg=true)](https://ci.appveyor.com/project/yargalot/gulp-accessibility)
+# Gulp Accessibility: Demo
 
 Uses [AccessSniff](https://github.com/yargalot/AccessSniff) and [HTML Codesniffer](http://github.com/squizlabs/HTML_CodeSniffer) to grade your sites accessibility using different levels of the WCAG guidelines
 
 ![Gulp Accessibility example](/img/example.png)
 
 ## Getting Started
-*NOTE*: Last tested with Node v10.
 
 Install this gulp plugin next to your project's gulpfile with: `npm install gulp-accessibility --save-dev`
 
