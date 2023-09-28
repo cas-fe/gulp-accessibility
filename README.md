@@ -1,5 +1,8 @@
 # Gulp Accessibility: Demo
 
+> [!WARNING]  
+> Archived as there is a simpler example published in https://github.com/cas-fe/Accessibility-Testing
+
 Uses [AccessSniff](https://github.com/yargalot/AccessSniff) and [HTML Codesniffer](http://github.com/squizlabs/HTML_CodeSniffer) to grade your sites accessibility using different levels of the WCAG guidelines
 
 ![Gulp Accessibility example](/img/example.png)
